@@ -6,10 +6,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
+    <div id="first">
+      <h1>CÓDIGO SECRETO</h1>
+      <br
+      <h2>Esta es una webapp para escribir y compartir mensajes secretos
+        con tu pareja, amigos, o con quien quieras! <br>
+        Para codificar tus mensajes usaremos
+      un cifrado por desplazamiento.<br>
+      <br>
+
+    ¡Prueba ahora!</h2>
+        <br>
+
+
+        <form>
+    <label for="texto">Escribe aquí el texto que quieres cifrar</label>
+    <br>
+
+    <input
+      type="text"
+      id="texto"
+
+
+    />
+  </form>
+<br>
+      <button type="submit" onclick="encrypt()" id= mostrarCifrado>Codificar</button>
+      <button type="submit" onclick="decrypt()" id = mostrarDescifrado>Decodificar</button>
+</div>
+
+  <div id="second">
+  <h2> tu texto cifrado es </h2>
+  <p></p>
+   <button type="submit" onclick="regresar()" id = regresarInicio>Volver</button>
+</div>
+
+
+
+<div id="third">
+
+</div>
+
+
+       <script src="cipher.js"></script>
+
     <script src="index.js"></script>
   </body>
 </html>
