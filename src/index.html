@@ -31,8 +31,21 @@
     />
   </form>
 <br>
-      <button type="submit" onclick="encrypt()" id= mostrarCifrado>Codificar</button>
+<form>
+<label for="shift">Escribe aquí tu número clave</label>
+<br>
+
+<input
+type="number"
+id="shift"
+
+
+/>
+</form>
+<br>
+      <button type="submit" onclick="encrypt()" id= textoUsuario>Codificar</button>
       <button type="submit" onclick="decrypt()" id = mostrarDescifrado>Decodificar</button>
+
 </div>
 
   <div id="second">
@@ -44,7 +57,9 @@
 
 
 <div id="third">
-
+  <h2> tu texto descifrado es </h2>
+  <p></p>
+   <button type="submit" onclick="regresar()" id = regresarInicio>Volver</button>
 </div>
 
 

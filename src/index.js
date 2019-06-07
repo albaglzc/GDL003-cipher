@@ -25,11 +25,12 @@ document.getElementById("mostrarCifrado").addEventListener("click", function(){
   first.style.display = "none";
   second.style.display = "block";
   third.style.display = "none";
-
+document.getElementById("texto").innerHTML=
+window.cipher.encrypt(textoUsuario, shift)
 
 }
 function decrypt(){
   first.style.display = "none";
-  second.style.display = "block";
-  third.style.display = "none";
+  second.style.display = "none";
+  third.style.display = "block";
 }
